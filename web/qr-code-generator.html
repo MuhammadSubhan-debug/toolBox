@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QR Code Generator - Free Online Tool | ToolBox</title>
+<meta name="description" content="Create QR codes in batches with custom designs, logo overlays and social profile badges.">
+<link rel="canonical" href="https://yourdomain.com/qr-code-generator.html">
+<meta property="og:type" content="website"><meta property="og:title" content="QR Code Generator | ToolBox"><meta property="og:description" content="Create and download QR codes online for free."><meta property="og:url" content="https://yourdomain.com/qr-code-generator.html"><meta name="twitter:card" content="summary">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"QR Code Generator","description":"Create QR codes for text, links, email and phone numbers.","url":"https://yourdomain.com/qr-code-generator.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script></head><body>
+<header><a class="logo" href="index.html"><img src="../images/favicon.svg" alt="" width="28" height="28"> ToolBox</a></header>
+<main><p class="crumb"><a href="index.html">Home</a> / QR Code Generator</p><h1>QR Code Generator</h1><p class="lead">Create multiple QR codes with custom designs, optional logos, and automatic social profile badges. Download individual PNGs or the whole batch as a ZIP.</p>
+<noscript><p class="err">This tool needs JavaScript enabled.</p></noscript>
+<section class="card qr-tool">
+<label for="qrtext">Content for QR code(s)<textarea id="qrtext" rows="5" maxlength="2500" placeholder="https://example.com&#10;https://instagram.com/yourname&#10;Add one QR content per line"></textarea></label>
+<p class="note">One line creates one QR code. Paste multiple links or text lines to generate a batch.</p>
+<div class="row">
+<label for="qrsize">QR code size<select id="qrsize"><option value="128">128 × 128</option><option value="200" selected>200 × 200</option><option value="300">300 × 300</option><option value="400">400 × 400</option><option value="512">512 × 512</option></select></label>
+<label for="qrecc">Error correction<select id="qrecc"><option value="L">Low (7%)</option><option value="M">Medium (15%)</option><option value="Q">Quartile (25%)</option><option value="H" selected>High (30%) — best for logos</option></select></label>
+<label for="qrdesign">QR design<select id="qrdesign"><option value="classic">Classic black & white</option><option value="blue">Blue professional</option><option value="purple">Purple premium</option><option value="dark">Dark mode</option><option value="green">Fresh green</option></select></label>
+<label for="qrlogo">Add logo (optional)<input id="qrlogo" type="file" accept="image/*"></label>
+</div>
+<label class="chk"><input id="qrsocial" type="checkbox" checked> Automatically add a social platform badge when the content is a recognized social profile/link</label>
+<div class="row">
+<label for="qrlogosize">Logo size<select id="qrlogosize"><option value="16">Small</option><option value="20" selected>Medium</option><option value="24">Large</option></select></label>
+<label for="qrframe">Frame style<select id="qrframe"><option value="none">No frame</option><option value="label">Label below QR</option><option value="rounded">Rounded card</option></select></label>
+</div>
+<p class="btns"><button class="btn" id="go">Generate QR Code(s)</button><button class="btn alt" id="qrdownload" disabled>Download PNG</button><button class="btn alt" id="qrzip" disabled>Download all as ZIP</button><button class="btn alt" id="qrcopy">Copy content</button></p>
+<div id="qrpreview" class="qr-results"><p class="note">Your QR code previews will appear here.</p></div>
+<p id="msg" role="status" aria-live="polite"></p>
+</section>
+<section class="about"><h2>How to use</h2><p>Enter one item per line to create multiple QR codes. Choose a design, upload your own logo, or enable automatic social platform badges. Download a single PNG or all generated codes in a ZIP. Scan every QR code before sharing.</p><p class="note">QR generation runs in your browser. Your entered content is not uploaded. The QR and ZIP libraries load from a CDN, so an internet connection is required the first time.</p></section>
+<section class="about"><h2>More free tools</h2><p class="links"><a href="barcode-generator.html">Barcode Generator</a><a href="json-formatter.html">JSON Formatter</a><a href="password-generator.html">Password Generator</a><a href="color-picker.html">Color Picker</a><a href="base64-encoder-decoder.html">Base64 Encoder and Decoder</a><a href="logo-maker.html">Simple Logo Maker</a></p></section></main>
+<footer>&copy; ToolBox. Free online tools. Your files stay on your device.</footer>
+<script src="app.js"></script><script>T.qr()</script></body></html>

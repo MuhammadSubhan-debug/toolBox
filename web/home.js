@@ -1,0 +1,1 @@
+const q=document.getElementById("q");q.oninput=()=>{const v=q.value.toLowerCase();let n=0;document.querySelectorAll(".tile").forEach(t=>{const m=t.textContent.toLowerCase().includes(v);t.hidden=!m;n+=m});document.getElementById("none").hidden=n>0}
